@@ -1,0 +1,619 @@
+Started GET "/devices" for ::1 at 2024-11-17 20:58:41 -0800
+Processing by DevicesController#index as HTML
+Completed 500 Internal Server Error in 8ms (GC: 0.4ms)
+
+
+  
+NoMethodError (undefined method `all' for class Device):
+  
+app/controllers/devices_controller.rb:6:in `index'
+Started GET "/favicon.ico" for ::1 at 2024-11-17 20:58:42 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/devices/1" for ::1 at 2024-11-17 20:59:07 -0800
+Processing by DevicesController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method `find' for class Device):
+  
+app/controllers/devices_controller.rb:44:in `set_device'
+Started GET "/devices/1" for ::1 at 2024-11-17 20:59:15 -0800
+Processing by DevicesController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 3ms (Views: 0.5ms | GC: 0.0ms)
+
+
+Started POST "/devices/readings" for ::1 at 2024-11-18 09:39:39 -0800
+  
+ActionController::RoutingError (uninitialized constant Devices)
+Caused by: ActionDispatch::MissingController (uninitialized constant Devices)
+Caused by: NameError (uninitialized constant Devices)
+
+Information for: ActionController::RoutingError (uninitialized constant Devices):
+  
+
+Information for cause: ActionDispatch::MissingController (uninitialized constant Devices):
+  
+actionpack (8.0.0) lib/action_dispatch/http/request.rb:102:in `rescue in controller_class_for'
+actionpack (8.0.0) lib/action_dispatch/http/request.rb:98:in `controller_class_for'
+actionpack (8.0.0) lib/action_dispatch/http/request.rb:91:in `controller_class'
+actionpack (8.0.0) lib/action_dispatch/routing/route_set.rb:61:in `controller'
+actionpack (8.0.0) lib/action_dispatch/routing/route_set.rb:48:in `serve'
+actionpack (8.0.0) lib/action_dispatch/journey/router.rb:53:in `block in serve'
+actionpack (8.0.0) lib/action_dispatch/journey/router.rb:133:in `block in find_routes'
+actionpack (8.0.0) lib/action_dispatch/journey/router.rb:126:in `each'
+actionpack (8.0.0) lib/action_dispatch/journey/router.rb:126:in `find_routes'
+actionpack (8.0.0) lib/action_dispatch/journey/router.rb:34:in `serve'
+actionpack (8.0.0) lib/action_dispatch/routing/route_set.rb:908:in `call'
+railties (8.0.0) lib/rails/engine/lazy_route_set.rb:68:in `call'
+rack (3.1.8) lib/rack/etag.rb:29:in `call'
+rack (3.1.8) lib/rack/conditional_get.rb:43:in `call'
+rack (3.1.8) lib/rack/head.rb:15:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (8.0.0) lib/active_support/callbacks.rb:100:in `run_callbacks'
+actionpack (8.0.0) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (8.0.0) lib/rails/rack/logger.rb:41:in `call_app'
+railties (8.0.0) lib/rails/rack/logger.rb:29:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/request_id.rb:34:in `call'
+rack (3.1.8) lib/rack/runtime.rb:24:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (8.0.0) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (8.0.0) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.1.8) lib/rack/sendfile.rb:114:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+railties (8.0.0) lib/rails/engine.rb:535:in `call'
+puma (6.4.3) lib/puma/configuration.rb:272:in `call'
+puma (6.4.3) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.3) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.3) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.3) lib/puma/server.rb:464:in `process_client'
+puma (6.4.3) lib/puma/server.rb:245:in `block in run'
+puma (6.4.3) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+
+Information for cause: NameError (uninitialized constant Devices):
+  
+activesupport (8.0.0) lib/active_support/inflector/methods.rb:290:in `constantize'
+activesupport (8.0.0) lib/active_support/core_ext/string/inflections.rb:74:in `constantize'
+actionpack (8.0.0) lib/action_dispatch/http/request.rb:99:in `controller_class_for'
+actionpack (8.0.0) lib/action_dispatch/http/request.rb:91:in `controller_class'
+actionpack (8.0.0) lib/action_dispatch/routing/route_set.rb:61:in `controller'
+actionpack (8.0.0) lib/action_dispatch/routing/route_set.rb:48:in `serve'
+actionpack (8.0.0) lib/action_dispatch/journey/router.rb:53:in `block in serve'
+actionpack (8.0.0) lib/action_dispatch/journey/router.rb:133:in `block in find_routes'
+actionpack (8.0.0) lib/action_dispatch/journey/router.rb:126:in `each'
+actionpack (8.0.0) lib/action_dispatch/journey/router.rb:126:in `find_routes'
+actionpack (8.0.0) lib/action_dispatch/journey/router.rb:34:in `serve'
+actionpack (8.0.0) lib/action_dispatch/routing/route_set.rb:908:in `call'
+railties (8.0.0) lib/rails/engine/lazy_route_set.rb:68:in `call'
+rack (3.1.8) lib/rack/etag.rb:29:in `call'
+rack (3.1.8) lib/rack/conditional_get.rb:43:in `call'
+rack (3.1.8) lib/rack/head.rb:15:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (8.0.0) lib/active_support/callbacks.rb:100:in `run_callbacks'
+actionpack (8.0.0) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (8.0.0) lib/rails/rack/logger.rb:41:in `call_app'
+railties (8.0.0) lib/rails/rack/logger.rb:29:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/request_id.rb:34:in `call'
+rack (3.1.8) lib/rack/runtime.rb:24:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (8.0.0) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (8.0.0) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.1.8) lib/rack/sendfile.rb:114:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+railties (8.0.0) lib/rails/engine.rb:535:in `call'
+puma (6.4.3) lib/puma/configuration.rb:272:in `call'
+puma (6.4.3) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.3) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.3) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.3) lib/puma/server.rb:464:in `process_client'
+puma (6.4.3) lib/puma/server.rb:245:in `block in run'
+puma (6.4.3) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Started POST "/devices/readings" for ::1 at 2024-11-18 09:39:55 -0800
+  
+ActionController::RoutingError (uninitialized constant Devices)
+Caused by: ActionDispatch::MissingController (uninitialized constant Devices)
+Caused by: NameError (uninitialized constant Devices)
+
+Information for: ActionController::RoutingError (uninitialized constant Devices):
+  
+
+Information for cause: ActionDispatch::MissingController (uninitialized constant Devices):
+  
+actionpack (8.0.0) lib/action_dispatch/http/request.rb:102:in `rescue in controller_class_for'
+actionpack (8.0.0) lib/action_dispatch/http/request.rb:98:in `controller_class_for'
+actionpack (8.0.0) lib/action_dispatch/http/request.rb:91:in `controller_class'
+actionpack (8.0.0) lib/action_dispatch/routing/route_set.rb:61:in `controller'
+actionpack (8.0.0) lib/action_dispatch/routing/route_set.rb:48:in `serve'
+actionpack (8.0.0) lib/action_dispatch/journey/router.rb:53:in `block in serve'
+actionpack (8.0.0) lib/action_dispatch/journey/router.rb:133:in `block in find_routes'
+actionpack (8.0.0) lib/action_dispatch/journey/router.rb:126:in `each'
+actionpack (8.0.0) lib/action_dispatch/journey/router.rb:126:in `find_routes'
+actionpack (8.0.0) lib/action_dispatch/journey/router.rb:34:in `serve'
+actionpack (8.0.0) lib/action_dispatch/routing/route_set.rb:908:in `call'
+railties (8.0.0) lib/rails/engine/lazy_route_set.rb:68:in `call'
+rack (3.1.8) lib/rack/etag.rb:29:in `call'
+rack (3.1.8) lib/rack/conditional_get.rb:43:in `call'
+rack (3.1.8) lib/rack/head.rb:15:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (8.0.0) lib/active_support/callbacks.rb:100:in `run_callbacks'
+actionpack (8.0.0) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (8.0.0) lib/rails/rack/logger.rb:41:in `call_app'
+railties (8.0.0) lib/rails/rack/logger.rb:29:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/request_id.rb:34:in `call'
+rack (3.1.8) lib/rack/runtime.rb:24:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (8.0.0) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (8.0.0) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.1.8) lib/rack/sendfile.rb:114:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+railties (8.0.0) lib/rails/engine.rb:535:in `call'
+puma (6.4.3) lib/puma/configuration.rb:272:in `call'
+puma (6.4.3) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.3) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.3) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.3) lib/puma/server.rb:464:in `process_client'
+puma (6.4.3) lib/puma/server.rb:245:in `block in run'
+puma (6.4.3) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+
+Information for cause: NameError (uninitialized constant Devices):
+  
+activesupport (8.0.0) lib/active_support/inflector/methods.rb:290:in `constantize'
+activesupport (8.0.0) lib/active_support/core_ext/string/inflections.rb:74:in `constantize'
+actionpack (8.0.0) lib/action_dispatch/http/request.rb:99:in `controller_class_for'
+actionpack (8.0.0) lib/action_dispatch/http/request.rb:91:in `controller_class'
+actionpack (8.0.0) lib/action_dispatch/routing/route_set.rb:61:in `controller'
+actionpack (8.0.0) lib/action_dispatch/routing/route_set.rb:48:in `serve'
+actionpack (8.0.0) lib/action_dispatch/journey/router.rb:53:in `block in serve'
+actionpack (8.0.0) lib/action_dispatch/journey/router.rb:133:in `block in find_routes'
+actionpack (8.0.0) lib/action_dispatch/journey/router.rb:126:in `each'
+actionpack (8.0.0) lib/action_dispatch/journey/router.rb:126:in `find_routes'
+actionpack (8.0.0) lib/action_dispatch/journey/router.rb:34:in `serve'
+actionpack (8.0.0) lib/action_dispatch/routing/route_set.rb:908:in `call'
+railties (8.0.0) lib/rails/engine/lazy_route_set.rb:68:in `call'
+rack (3.1.8) lib/rack/etag.rb:29:in `call'
+rack (3.1.8) lib/rack/conditional_get.rb:43:in `call'
+rack (3.1.8) lib/rack/head.rb:15:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (8.0.0) lib/active_support/callbacks.rb:100:in `run_callbacks'
+actionpack (8.0.0) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (8.0.0) lib/rails/rack/logger.rb:41:in `call_app'
+railties (8.0.0) lib/rails/rack/logger.rb:29:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/request_id.rb:34:in `call'
+rack (3.1.8) lib/rack/runtime.rb:24:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (8.0.0) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (8.0.0) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.1.8) lib/rack/sendfile.rb:114:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+railties (8.0.0) lib/rails/engine.rb:535:in `call'
+puma (6.4.3) lib/puma/configuration.rb:272:in `call'
+puma (6.4.3) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.3) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.3) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.3) lib/puma/server.rb:464:in `process_client'
+puma (6.4.3) lib/puma/server.rb:245:in `block in run'
+puma (6.4.3) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Started POST "/devices/readings" for ::1 at 2024-11-18 09:42:38 -0800
+  
+ActionController::RoutingError (uninitialized constant Devices)
+Caused by: ActionDispatch::MissingController (uninitialized constant Devices)
+Caused by: NameError (uninitialized constant Devices)
+
+Information for: ActionController::RoutingError (uninitialized constant Devices):
+  
+
+Information for cause: ActionDispatch::MissingController (uninitialized constant Devices):
+  
+actionpack (8.0.0) lib/action_dispatch/http/request.rb:102:in `rescue in controller_class_for'
+actionpack (8.0.0) lib/action_dispatch/http/request.rb:98:in `controller_class_for'
+actionpack (8.0.0) lib/action_dispatch/http/request.rb:91:in `controller_class'
+actionpack (8.0.0) lib/action_dispatch/routing/route_set.rb:61:in `controller'
+actionpack (8.0.0) lib/action_dispatch/routing/route_set.rb:48:in `serve'
+actionpack (8.0.0) lib/action_dispatch/journey/router.rb:53:in `block in serve'
+actionpack (8.0.0) lib/action_dispatch/journey/router.rb:133:in `block in find_routes'
+actionpack (8.0.0) lib/action_dispatch/journey/router.rb:126:in `each'
+actionpack (8.0.0) lib/action_dispatch/journey/router.rb:126:in `find_routes'
+actionpack (8.0.0) lib/action_dispatch/journey/router.rb:34:in `serve'
+actionpack (8.0.0) lib/action_dispatch/routing/route_set.rb:908:in `call'
+railties (8.0.0) lib/rails/engine/lazy_route_set.rb:68:in `call'
+rack (3.1.8) lib/rack/etag.rb:29:in `call'
+rack (3.1.8) lib/rack/conditional_get.rb:43:in `call'
+rack (3.1.8) lib/rack/head.rb:15:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (8.0.0) lib/active_support/callbacks.rb:100:in `run_callbacks'
+actionpack (8.0.0) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (8.0.0) lib/rails/rack/logger.rb:41:in `call_app'
+railties (8.0.0) lib/rails/rack/logger.rb:29:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/request_id.rb:34:in `call'
+rack (3.1.8) lib/rack/runtime.rb:24:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (8.0.0) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (8.0.0) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.1.8) lib/rack/sendfile.rb:114:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+railties (8.0.0) lib/rails/engine.rb:535:in `call'
+puma (6.4.3) lib/puma/configuration.rb:272:in `call'
+puma (6.4.3) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.3) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.3) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.3) lib/puma/server.rb:464:in `process_client'
+puma (6.4.3) lib/puma/server.rb:245:in `block in run'
+puma (6.4.3) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+
+Information for cause: NameError (uninitialized constant Devices):
+  
+activesupport (8.0.0) lib/active_support/inflector/methods.rb:290:in `constantize'
+activesupport (8.0.0) lib/active_support/core_ext/string/inflections.rb:74:in `constantize'
+actionpack (8.0.0) lib/action_dispatch/http/request.rb:99:in `controller_class_for'
+actionpack (8.0.0) lib/action_dispatch/http/request.rb:91:in `controller_class'
+actionpack (8.0.0) lib/action_dispatch/routing/route_set.rb:61:in `controller'
+actionpack (8.0.0) lib/action_dispatch/routing/route_set.rb:48:in `serve'
+actionpack (8.0.0) lib/action_dispatch/journey/router.rb:53:in `block in serve'
+actionpack (8.0.0) lib/action_dispatch/journey/router.rb:133:in `block in find_routes'
+actionpack (8.0.0) lib/action_dispatch/journey/router.rb:126:in `each'
+actionpack (8.0.0) lib/action_dispatch/journey/router.rb:126:in `find_routes'
+actionpack (8.0.0) lib/action_dispatch/journey/router.rb:34:in `serve'
+actionpack (8.0.0) lib/action_dispatch/routing/route_set.rb:908:in `call'
+railties (8.0.0) lib/rails/engine/lazy_route_set.rb:68:in `call'
+rack (3.1.8) lib/rack/etag.rb:29:in `call'
+rack (3.1.8) lib/rack/conditional_get.rb:43:in `call'
+rack (3.1.8) lib/rack/head.rb:15:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (8.0.0) lib/active_support/callbacks.rb:100:in `run_callbacks'
+actionpack (8.0.0) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (8.0.0) lib/rails/rack/logger.rb:41:in `call_app'
+railties (8.0.0) lib/rails/rack/logger.rb:29:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/request_id.rb:34:in `call'
+rack (3.1.8) lib/rack/runtime.rb:24:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (8.0.0) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (8.0.0) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.1.8) lib/rack/sendfile.rb:114:in `call'
+actionpack (8.0.0) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+railties (8.0.0) lib/rails/engine.rb:535:in `call'
+puma (6.4.3) lib/puma/configuration.rb:272:in `call'
+puma (6.4.3) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.3) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.3) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.3) lib/puma/server.rb:464:in `process_client'
+puma (6.4.3) lib/puma/server.rb:245:in `block in run'
+puma (6.4.3) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Started POST "/devices/readings" for ::1 at 2024-11-18 09:45:28 -0800
+Processing by Devices::ReadingsController#create as */*
+Completed 500 Internal Server Error in 4ms (GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method `pry' for an instance of Binding):
+  
+app/controllers/devices/readings_controller.rb:3:in `create'
+Started POST "/devices/readings" for ::1 at 2024-11-18 09:45:53 -0800
+Processing by Devices::ReadingsController#create as */*
+Completed 204 No Content in 8116ms (GC: 11.9ms)
+
+
+Started POST "/devices/readings" for ::1 at 2024-11-18 09:47:44 -0800
+Processing by Devices::ReadingsController#create as */*
+  Parameters: {"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}], "reading"=>{"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}]}}
+Completed 204 No Content in 2008221ms (GC: 170.2ms)
+
+
+Started POST "/devices/readings" for ::1 at 2024-11-18 12:36:28 -0800
+Processing by Devices::ReadingsController#create as */*
+  Parameters: {"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}], "reading"=>{"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}]}}
+Completed 204 No Content in 16863ms (GC: 26.8ms)
+
+
+Started POST "/devices/readings" for ::1 at 2024-11-18 12:36:48 -0800
+Processing by Devices::ReadingsController#create as */*
+  Parameters: {"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}], "reading"=>{"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}]}}
+Completed 204 No Content in 27584ms (GC: 15.0ms)
+
+
+Started POST "/devices/readings" for ::1 at 2024-11-18 12:37:18 -0800
+Processing by Devices::ReadingsController#create as */*
+  Parameters: {"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}], "reading"=>{"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}]}}
+Completed 204 No Content in 4720ms (GC: 4.0ms)
+
+
+Started POST "/devices/readings" for ::1 at 2024-11-18 12:41:08 -0800
+Processing by Devices::ReadingsController#create as */*
+  Parameters: {"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}], "reading"=>{"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}]}}
+[31mUnpermitted parameter: :reading. Context: { controller: Devices::ReadingsController, action: create, request: #<ActionDispatch::Request:0x0000000141fb7268>, params: {"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}], "controller"=>"devices/readings", "action"=>"create", "reading"=>{"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}]}} }[0m
+[31mUnpermitted parameter: :reading. Context: { controller: Devices::ReadingsController, action: create, request: #<ActionDispatch::Request:0x0000000141fb7268>, params: {"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}], "controller"=>"devices/readings", "action"=>"create", "reading"=>{"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}]}} }[0m
+Completed 204 No Content in 167688ms (GC: 67.2ms)
+
+
+Started POST "/devices/readings" for ::1 at 2024-11-18 12:45:13 -0800
+Processing by Devices::ReadingsController#create as */*
+  Parameters: {"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}], "reading"=>{"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}]}}
+[31mUnpermitted parameter: :reading. Context: { controller: Devices::ReadingsController, action: create, request: #<ActionDispatch::Request:0x0000000141bdc1c0>, params: {"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}], "controller"=>"devices/readings", "action"=>"create", "reading"=>{"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}]}} }[0m
+Completed 500 Internal Server Error in 1ms (GC: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/controllers/devices/readings_controller.rb:4:in `initialize'
+app/controllers/devices/readings_controller.rb:4:in `new'
+app/controllers/devices/readings_controller.rb:4:in `block in create'
+app/controllers/devices/readings_controller.rb:3:in `create'
+Started POST "/devices/readings" for ::1 at 2024-11-18 12:45:26 -0800
+Processing by Devices::ReadingsController#create as */*
+  Parameters: {"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}], "reading"=>{"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}]}}
+[31mUnpermitted parameter: :reading. Context: { controller: Devices::ReadingsController, action: create, request: #<ActionDispatch::Request:0x0000000142bb9cf0>, params: {"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}], "controller"=>"devices/readings", "action"=>"create", "reading"=>{"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}]}} }[0m
+[31mUnpermitted parameter: :reading. Context: { controller: Devices::ReadingsController, action: create, request: #<ActionDispatch::Request:0x0000000142bb9cf0>, params: {"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}], "controller"=>"devices/readings", "action"=>"create", "reading"=>{"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}]}} }[0m
+[31mUnpermitted parameter: :reading. Context: { controller: Devices::ReadingsController, action: create, request: #<ActionDispatch::Request:0x0000000142bb9cf0>, params: {"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}], "controller"=>"devices/readings", "action"=>"create", "reading"=>{"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}]}} }[0m
+[31mUnpermitted parameter: :reading. Context: { controller: Devices::ReadingsController, action: create, request: #<ActionDispatch::Request:0x0000000142bb9cf0>, params: {"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}], "controller"=>"devices/readings", "action"=>"create", "reading"=>{"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}]}} }[0m
+[31mUnpermitted parameter: :reading. Context: { controller: Devices::ReadingsController, action: create, request: #<ActionDispatch::Request:0x0000000142bb9cf0>, params: {"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}], "controller"=>"devices/readings", "action"=>"create", "reading"=>{"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}]}} }[0m
+[31mUnpermitted parameter: :reading. Context: { controller: Devices::ReadingsController, action: create, request: #<ActionDispatch::Request:0x0000000142bb9cf0>, params: {"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}], "controller"=>"devices/readings", "action"=>"create", "reading"=>{"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}]}} }[0m
+[31mUnpermitted parameter: :reading. Context: { controller: Devices::ReadingsController, action: create, request: #<ActionDispatch::Request:0x0000000142bb9cf0>, params: {"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}], "controller"=>"devices/readings", "action"=>"create", "reading"=>{"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}]}} }[0m
+Completed 500 Internal Server Error in 14706036ms (GC: 248.4ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/controllers/devices/readings_controller.rb:5:in `initialize'
+app/controllers/devices/readings_controller.rb:5:in `new'
+app/controllers/devices/readings_controller.rb:5:in `block in create'
+app/controllers/devices/readings_controller.rb:4:in `create'
+Started POST "/devices/readings" for ::1 at 2024-11-18 16:50:45 -0800
+Processing by Devices::ReadingsController#create as */*
+  Parameters: {"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}], "reading"=>{"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}]}}
+[31mUnpermitted parameter: :reading. Context: { controller: Devices::ReadingsController, action: create, request: #<ActionDispatch::Request:0x0000000142cfc630>, params: {"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}], "controller"=>"devices/readings", "action"=>"create", "reading"=>{"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}]}} }[0m
+Completed 500 Internal Server Error in 0ms (GC: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/controllers/devices/readings_controller.rb:4:in `initialize'
+app/controllers/devices/readings_controller.rb:4:in `new'
+app/controllers/devices/readings_controller.rb:4:in `block in create'
+app/controllers/devices/readings_controller.rb:3:in `each'
+app/controllers/devices/readings_controller.rb:3:in `create'
+Started POST "/devices/readings" for ::1 at 2024-11-18 16:51:21 -0800
+Processing by Devices::ReadingsController#create as */*
+  Parameters: {"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}], "reading"=>{"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}]}}
+[31mUnpermitted parameter: :reading. Context: { controller: Devices::ReadingsController, action: create, request: #<ActionDispatch::Request:0x0000000144c356f0>, params: {"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}], "controller"=>"devices/readings", "action"=>"create", "reading"=>{"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}]}} }[0m
+[31mUnpermitted parameter: :reading. Context: { controller: Devices::ReadingsController, action: create, request: #<ActionDispatch::Request:0x0000000144c356f0>, params: {"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}], "controller"=>"devices/readings", "action"=>"create", "reading"=>{"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}]}} }[0m
+[31mUnpermitted parameter: :reading. Context: { controller: Devices::ReadingsController, action: create, request: #<ActionDispatch::Request:0x0000000144c356f0>, params: {"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}], "controller"=>"devices/readings", "action"=>"create", "reading"=>{"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}]}} }[0m
+Completed 500 Internal Server Error in 43278ms (GC: 41.1ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/controllers/devices/readings_controller.rb:5:in `initialize'
+app/controllers/devices/readings_controller.rb:5:in `new'
+app/controllers/devices/readings_controller.rb:5:in `block in create'
+app/controllers/devices/readings_controller.rb:4:in `each'
+app/controllers/devices/readings_controller.rb:4:in `create'
+Started POST "/devices/readings" for ::1 at 2024-11-18 16:52:10 -0800
+Processing by Devices::ReadingsController#create as */*
+  Parameters: {"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}], "reading"=>{"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}]}}
+[31mUnpermitted parameter: :reading. Context: { controller: Devices::ReadingsController, action: create, request: #<ActionDispatch::Request:0x00000001403f7a00>, params: {"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}], "controller"=>"devices/readings", "action"=>"create", "reading"=>{"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}]}} }[0m
+[31mUnpermitted parameter: :reading. Context: { controller: Devices::ReadingsController, action: create, request: #<ActionDispatch::Request:0x00000001403f7a00>, params: {"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}], "controller"=>"devices/readings", "action"=>"create", "reading"=>{"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}]}} }[0m
+Completed 500 Internal Server Error in 4284ms (GC: 1.0ms)
+
+
+  
+Redis::CommandError (MISCONF Redis is configured to save RDB snapshots, but it's currently unable to persist to disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. (redis://localhost:6379))
+Caused by: RedisClient::CommandError (MISCONF Redis is configured to save RDB snapshots, but it's currently unable to persist to disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. (redis://localhost:6379))
+
+Information for: Redis::CommandError (MISCONF Redis is configured to save RDB snapshots, but it's currently unable to persist to disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. (redis://localhost:6379)):
+  
+
+Information for cause: RedisClient::CommandError (MISCONF Redis is configured to save RDB snapshots, but it's currently unable to persist to disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. (redis://localhost:6379)):
+  
+app/models/reading.rb:7:in `save'
+app/controllers/devices/readings_controller.rb:5:in `block in create'
+app/controllers/devices/readings_controller.rb:4:in `each'
+app/controllers/devices/readings_controller.rb:4:in `create'
+Started POST "/devices/readings" for ::1 at 2024-11-18 16:52:57 -0800
+Processing by Devices::ReadingsController#create as */*
+  Parameters: {"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}], "reading"=>{"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}]}}
+[31mUnpermitted parameter: :reading. Context: { controller: Devices::ReadingsController, action: create, request: #<ActionDispatch::Request:0x000000011f8635d8>, params: {"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}], "controller"=>"devices/readings", "action"=>"create", "reading"=>{"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}]}} }[0m
+[31mUnpermitted parameter: :reading. Context: { controller: Devices::ReadingsController, action: create, request: #<ActionDispatch::Request:0x000000011f8635d8>, params: {"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}], "controller"=>"devices/readings", "action"=>"create", "reading"=>{"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}]}} }[0m
+[31mUnpermitted parameter: :reading. Context: { controller: Devices::ReadingsController, action: create, request: #<ActionDispatch::Request:0x000000011f8635d8>, params: {"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}], "controller"=>"devices/readings", "action"=>"create", "reading"=>{"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}]}} }[0m
+Completed 200 OK in 3556ms (Views: 0.4ms | GC: 2.3ms)
+
+
+Started GET "/devices/latest_timestamp/fake" for ::1 at 2024-11-18 20:00:06 -0800
+  
+ArgumentError (can't use member outside resource(s) scope):
+  
+config/routes.rb:13:in `block (2 levels) in <main>'
+config/routes.rb:12:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/devices/latest_timestamp/fake" for ::1 at 2024-11-18 20:04:03 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/devices/latest_timestamp/fake"):
+  
+Started GET "/devices/fake/latest_timestamp" for ::1 at 2024-11-18 20:04:30 -0800
+Processing by DevicesController#latest_timestamp as HTML
+  Parameters: {"id"=>"fake"}
+Completed 400 Bad Request in 3ms (GC: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty or invalid: uuid):
+  
+app/controllers/devices_controller.rb:15:in `set_device'
+Started GET "/devices/fake/latest_timestamp" for ::1 at 2024-11-18 20:05:25 -0800
+Processing by DevicesController#latest_timestamp as HTML
+  Parameters: {"id"=>"fake"}
+Completed 200 OK in 6ms (Views: 0.3ms | GC: 0.0ms)
+
+
+Started GET "/devices/fake/cumulative_count" for ::1 at 2024-11-18 20:05:46 -0800
+Processing by DevicesController#cumulative_count as HTML
+  Parameters: {"id"=>"fake"}
+Completed 200 OK in 1ms (Views: 0.2ms | GC: 0.0ms)
+
+
+Started POST "/devices/readings" for ::1 at 2024-11-18 20:06:01 -0800
+Processing by Devices::ReadingsController#create as */*
+  Parameters: {"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}], "reading"=>{"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}]}}
+[31mUnpermitted parameter: :reading. Context: { controller: Devices::ReadingsController, action: create, request: #<ActionDispatch::Request:0x00000001210cc138>, params: {"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}], "controller"=>"devices/readings", "action"=>"create", "reading"=>{"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}]}} }[0m
+[31mUnpermitted parameter: :reading. Context: { controller: Devices::ReadingsController, action: create, request: #<ActionDispatch::Request:0x00000001210cc138>, params: {"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}], "controller"=>"devices/readings", "action"=>"create", "reading"=>{"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}]}} }[0m
+[31mUnpermitted parameter: :reading. Context: { controller: Devices::ReadingsController, action: create, request: #<ActionDispatch::Request:0x00000001210cc138>, params: {"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}], "controller"=>"devices/readings", "action"=>"create", "reading"=>{"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}]}} }[0m
+Completed 200 OK in 8410ms (Views: 0.4ms | GC: 26.2ms)
+
+
+Started GET "/devices/fake/cumulative_count" for ::1 at 2024-11-18 20:06:24 -0800
+Processing by DevicesController#cumulative_count as HTML
+  Parameters: {"id"=>"fake"}
+Completed 200 OK in 1ms (Views: 0.2ms | GC: 0.0ms)
+
+
+Started POST "/devices/readings" for ::1 at 2024-11-18 20:06:27 -0800
+Processing by Devices::ReadingsController#create as */*
+  Parameters: {"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}], "reading"=>{"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}]}}
+[31mUnpermitted parameter: :reading. Context: { controller: Devices::ReadingsController, action: create, request: #<ActionDispatch::Request:0x00000001216f5be0>, params: {"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}], "controller"=>"devices/readings", "action"=>"create", "reading"=>{"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}]}} }[0m
+[31mUnpermitted parameter: :reading. Context: { controller: Devices::ReadingsController, action: create, request: #<ActionDispatch::Request:0x00000001216f5be0>, params: {"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}], "controller"=>"devices/readings", "action"=>"create", "reading"=>{"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}]}} }[0m
+[31mUnpermitted parameter: :reading. Context: { controller: Devices::ReadingsController, action: create, request: #<ActionDispatch::Request:0x00000001216f5be0>, params: {"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}], "controller"=>"devices/readings", "action"=>"create", "reading"=>{"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}]}} }[0m
+Completed 200 OK in 6ms (Views: 0.4ms | GC: 0.0ms)
+
+
+Started GET "/devices/fake/cumulative_count" for ::1 at 2024-11-18 20:06:31 -0800
+Processing by DevicesController#cumulative_count as HTML
+  Parameters: {"id"=>"fake"}
+Completed 200 OK in 1ms (Views: 0.3ms | GC: 0.0ms)
+
+
+Started GET "/devices/36d5658a-6908-479e-887e-a949ec199272/cumulative_count" for ::1 at 2024-11-18 20:06:36 -0800
+Processing by DevicesController#cumulative_count as HTML
+  Parameters: {"id"=>"36d5658a-6908-479e-887e-a949ec199272"}
+Completed 200 OK in 2ms (Views: 0.2ms | GC: 0.0ms)
+
+
+Started GET "/devices/36d5658a-6908-479e-887e-a949ec199272/cumulative_count" for ::1 at 2024-11-18 20:06:41 -0800
+Processing by DevicesController#cumulative_count as HTML
+  Parameters: {"id"=>"36d5658a-6908-479e-887e-a949ec199272"}
+Completed 200 OK in 1ms (Views: 0.2ms | GC: 0.0ms)
+
+
+Started GET "/devices/36d5658a-6908-479e-887e-a949ec199272/latest_timestamp" for ::1 at 2024-11-18 20:06:57 -0800
+Processing by DevicesController#latest_timestamp as HTML
+  Parameters: {"id"=>"36d5658a-6908-479e-887e-a949ec199272"}
+Completed 200 OK in 2ms (Views: 0.2ms | GC: 0.0ms)
+
+
+Started GET "/devices/36d5658a-6908-479e-887e-a949ec199272/latest_timestamp" for ::1 at 2024-11-18 20:07:23 -0800
+Processing by DevicesController#latest_timestamp as HTML
+  Parameters: {"id"=>"36d5658a-6908-479e-887e-a949ec199272"}
+Completed 200 OK in 4ms (Views: 0.1ms | GC: 0.0ms)
+
+
+Started GET "/devices/36d5658a-6908-479e-887e-a949ec199272/latest_timestamp" for ::1 at 2024-11-18 20:08:50 -0800
+Processing by DevicesController#latest_timestamp as HTML
+  Parameters: {"id"=>"36d5658a-6908-479e-887e-a949ec199272"}
+Completed 200 OK in 4ms (Views: 0.3ms | GC: 0.0ms)
+
+
+Started GET "/devices/36d5658a-6908-479e-887e-a949ec199272/latest_timestamp" for ::1 at 2024-11-18 20:09:01 -0800
+Processing by DevicesController#latest_timestamp as HTML
+  Parameters: {"id"=>"36d5658a-6908-479e-887e-a949ec199272"}
+Completed 200 OK in 210538ms (Views: 0.3ms | GC: 23.6ms)
+
+
+Started POST "/devices/readings" for ::1 at 2024-11-18 20:12:36 -0800
+Processing by Devices::ReadingsController#create as */*
+  Parameters: {"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}], "reading"=>{"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}]}}
+[31mUnpermitted parameter: :reading. Context: { controller: Devices::ReadingsController, action: create, request: #<ActionDispatch::Request:0x00000001218728b0>, params: {"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}], "controller"=>"devices/readings", "action"=>"create", "reading"=>{"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}]}} }[0m
+[31mUnpermitted parameter: :reading. Context: { controller: Devices::ReadingsController, action: create, request: #<ActionDispatch::Request:0x00000001218728b0>, params: {"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}], "controller"=>"devices/readings", "action"=>"create", "reading"=>{"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}]}} }[0m
+Completed 500 Internal Server Error in 2ms (GC: 0.0ms)
+
+
+  
+NoMethodError (undefined method `reading_key' for an instance of Device):
+  
+app/models/reading.rb:11:in `reading_key'
+app/models/reading.rb:7:in `save'
+app/controllers/devices/readings_controller.rb:4:in `block in create'
+app/controllers/devices/readings_controller.rb:3:in `each'
+app/controllers/devices/readings_controller.rb:3:in `create'
+Started POST "/devices/readings" for ::1 at 2024-11-18 20:13:01 -0800
+Processing by Devices::ReadingsController#create as */*
+  Parameters: {"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}], "reading"=>{"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}]}}
+[31mUnpermitted parameter: :reading. Context: { controller: Devices::ReadingsController, action: create, request: #<ActionDispatch::Request:0x0000000120c2ed88>, params: {"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}], "controller"=>"devices/readings", "action"=>"create", "reading"=>{"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}]}} }[0m
+[31mUnpermitted parameter: :reading. Context: { controller: Devices::ReadingsController, action: create, request: #<ActionDispatch::Request:0x0000000120c2ed88>, params: {"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}], "controller"=>"devices/readings", "action"=>"create", "reading"=>{"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}]}} }[0m
+[31mUnpermitted parameter: :reading. Context: { controller: Devices::ReadingsController, action: create, request: #<ActionDispatch::Request:0x0000000120c2ed88>, params: {"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}], "controller"=>"devices/readings", "action"=>"create", "reading"=>{"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}]}} }[0m
+Completed 200 OK in 6ms (Views: 0.3ms | GC: 0.0ms)
+
+
+Started GET "/devices/36d5658a-6908-479e-887e-a949ec199272/cumulative_count" for ::1 at 2024-11-18 20:13:04 -0800
+Processing by DevicesController#cumulative_count as HTML
+  Parameters: {"id"=>"36d5658a-6908-479e-887e-a949ec199272"}
+Completed 200 OK in 4900ms (Views: 0.2ms | GC: 13.5ms)
+
+
+Started POST "/devices/readings" for ::1 at 2024-11-18 20:13:14 -0800
+Processing by Devices::ReadingsController#create as */*
+  Parameters: {"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}], "reading"=>{"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}]}}
+[31mUnpermitted parameter: :reading. Context: { controller: Devices::ReadingsController, action: create, request: #<ActionDispatch::Request:0x00000001216bae78>, params: {"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}], "controller"=>"devices/readings", "action"=>"create", "reading"=>{"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}]}} }[0m
+[31mUnpermitted parameter: :reading. Context: { controller: Devices::ReadingsController, action: create, request: #<ActionDispatch::Request:0x00000001216bae78>, params: {"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}], "controller"=>"devices/readings", "action"=>"create", "reading"=>{"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}]}} }[0m
+[31mUnpermitted parameter: :reading. Context: { controller: Devices::ReadingsController, action: create, request: #<ActionDispatch::Request:0x00000001216bae78>, params: {"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}], "controller"=>"devices/readings", "action"=>"create", "reading"=>{"id"=>"36d5658a-6908-479e-887e-a949ec199272", "readings"=>[{"timestamp"=>"2021-09-29T16:08:15+01:00", "count"=>2}, {"timestamp"=>"2021-09-29T16:09:15+01:00", "count"=>15}]}} }[0m
+Completed 200 OK in 4ms (Views: 0.2ms | GC: 0.0ms)
+
+
+Started GET "/devices/36d5658a-6908-479e-887e-a949ec199272/cumulative_count" for ::1 at 2024-11-18 20:13:16 -0800
+Processing by DevicesController#cumulative_count as HTML
+  Parameters: {"id"=>"36d5658a-6908-479e-887e-a949ec199272"}
+Completed 200 OK in 3586ms (Views: 0.4ms | GC: 2.3ms)
+
+
+Started GET "/devices/36d5658a-6908-479e-887e-a949ec199272/latest_timestamp" for ::1 at 2024-11-18 20:13:37 -0800
+Processing by DevicesController#latest_timestamp as HTML
+  Parameters: {"id"=>"36d5658a-6908-479e-887e-a949ec199272"}
+Completed 200 OK in 3980ms (Views: 1.1ms | GC: 0.7ms)
+
+
